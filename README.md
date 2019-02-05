@@ -3,20 +3,20 @@ Simple script for copying ZooKeeper nodes
 
 WARNING: The code has not seen much testing. **USE AT YOUR OWN RISK!**
 
-== Requirements
+## Requirements
 - Python 3
 - [kazoo](https://github.com/python-zk/kazoo)
 
-== Quickstart
-=== Within one cluster
+## Quickstart
+### Within one cluster
 ```
 ./zkcopy.py -z <host>:<port> -s <src_path> -d <dst_path>
 ```
-=== Between clusters
+### Between clusters
 ```
 ./zkcopy.py --source-zk=<host1>:<port1> --destination-zk=<host2>:<port2> -s <src_path> -d <dst_path>
 ```
-== Options
+## Options
 ```
 -z <host>:<port>
 --zookeeper=<host>:<port>
